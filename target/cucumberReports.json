@@ -1,0 +1,630 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-04T01:29:44.579Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10002400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "feature-to-test-oauth-2.0-authentication;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13768410500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User hits Url to get Authentication Code",
+            "match": {
+              "location": "steps.OAuth.user_hits_Url_to_get_Authentication_Code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3592616100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User calls getTokenAPI with POST HTTP request to send back Authentication Code and to get the Access Token",
+            "match": {
+              "location": "steps.OAuth.user_calls_getTokenAPI_with_POST_HTTP_request_to_send_back_Authentication_Code_and_to_get_the_Access_Token()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 798669400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User calls getCourseAPI with GET HTTP request",
+            "match": {
+              "location": "steps.OAuth.user_calls_getCourseAPI_with_GET_HTTP_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 817875500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Close browser",
+            "match": {
+              "location": "steps.OAuth.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@OAuthAuthentication"
+          },
+          {
+            "name": "@OAuthAuthentication_Test"
+          }
+        ]
+      }
+    ],
+    "name": "Feature to test OAuth 2.0 Authentication",
+    "description": "  I want to use this template for OAuth 2.0 Authentication",
+    "id": "feature-to-test-oauth-2.0-authentication",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/OAuthTestAuthentication.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@OAuthAuthentication",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-04T01:30:03.668Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Add Place using AddPlaceAPI",
+        "description": "",
+        "id": "validate-place-apis-feature;add-place-using-addplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 63012800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is provided with BaseUrl and common Query Parameter",
+            "match": {
+              "location": "steps.PlaceValidation.user_is_provided_with_BaseUrl_and_common_Query_Parameter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1138559100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User calls \"addPlaceAPI\" with \"POST\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.PlaceValidation.user_calls_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify API call response is Success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.PlaceValidation.verify_API_call_response_is_Success_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23006300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"status\" in \"POST\" response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.PlaceValidation.in_response_body_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@PlaceValidationE2E"
+          },
+          {
+            "name": "@PlaceValidationE2E_AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-04T01:30:04.933Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify Response using getPlaceAPI",
+        "description": "",
+        "id": "validate-place-apis-feature;verify-response-using-getplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is provided with BaseUrl and common Query Parameter",
+            "match": {
+              "location": "steps.PlaceValidation.user_is_provided_with_BaseUrl_and_common_Query_Parameter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3005804000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User calls \"getPlaceAPI\" with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.PlaceValidation.user_calls_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify API call response is Success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.PlaceValidation.verify_API_call_response_is_Success_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26005700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"name\" in \"GET\" response body is \"Frontline house\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Frontline house\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PlaceValidation.in_response_body_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25003600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "\"language\" in \"GET\" response body is \"French-IN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"language\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"French-IN\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.PlaceValidation.in_response_body_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@PlaceValidationE2E"
+          },
+          {
+            "name": "@PlaceValidationE2E_GetPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-04T01:30:08.019Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2002400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Update Place using UpdatePlaceAPI",
+        "description": "",
+        "id": "validate-place-apis-feature;update-place-using-updateplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3002000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is provided with BaseUrl and common Query Parameter",
+            "match": {
+              "location": "steps.PlaceValidation.user_is_provided_with_BaseUrl_and_common_Query_Parameter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2486204800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User calls \"updatePlaceAPI\" with \"PUT\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PlaceValidation.user_calls_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1017900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Verify API call response is Success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.PlaceValidation.verify_API_call_response_is_Success_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2147824700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User calls \"getPlaceAPI\" with \"GET\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.PlaceValidation.user_calls_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25022000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "\"address\" in \"GET\" response body is \"India\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"address\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"India\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.PlaceValidation.in_response_body_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@PlaceValidationE2E"
+          },
+          {
+            "name": "@PlaceValidationE2E_UpdatePlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-04T01:30:12.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Delete Place using DeletePlaceAPI",
+        "description": "",
+        "id": "validate-place-apis-feature;delete-place-using-deleteplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is provided with BaseUrl and common Query Parameter",
+            "match": {
+              "location": "steps.PlaceValidation.user_is_provided_with_BaseUrl_and_common_Query_Parameter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2524445700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User calls \"deletePlaceAPI\" with \"DELETE\" HTTP request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 33
+                }
+              ],
+              "location": "steps.PlaceValidation.user_calls_with_HTTP_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001100,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Verify API call response is Success with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 56
+                }
+              ],
+              "location": "steps.PlaceValidation.verify_API_call_response_is_Success_with_status_code_as(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23007600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "\"status\" in \"DELETE\" response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 0
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.PlaceValidation.in_response_body_is(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@PlaceValidationE2E"
+          },
+          {
+            "name": "@PlaceValidationE2E_DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Place APIs feature",
+    "description": "  I want to use this template to Validate Place APIs feature",
+    "id": "validate-place-apis-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PlaceValidationE2E.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@PlaceValidationE2E",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
