@@ -1,6 +1,6 @@
 # RestAssured_Selenium_Java_Cucumber_BDD_Sikuli_JUnit
 
-This is an Web Automation Testing framework using:
+This is an API Automation Testing framework using:
 
 	RestAssured
 	Selenium
