@@ -10,6 +10,7 @@ This is an API Automation Testing framework using:
 	log4j2
 	Maven
 	JUnit
+	Page Object Model
 
 ## Installation
 
