@@ -29,20 +29,14 @@ public class OAuth_BC {
 		driver.get(base_url);
 
 		// Enter Id
-		oAuth_OB.email_ob.sendKeys("avikthetester@gmail.com");
+		oAuth_OB.email_ob.sendKeys("<email>");
 		oAuth_OB.email_next_button_ob.click();
 		Thread.sleep(4000);
 
 		// Enter Password
-		oAuth_OB.password_ob.sendKeys("Avik1988TheTester");
+		oAuth_OB.password_ob.sendKeys("<password>");
 		oAuth_OB.password_next_button_ob.click();
 		Thread.sleep(4000);
-
-		// Enter Phone Number
-//		driver.findElement(By.cssSelector("#phoneNumberId"))
-//				.sendKeys("9007079853");
-//		driver.findElement(By.cssSelector("#idvanyphonecollectNext > div > button")).click();
-//		Thread.sleep(4000);
 
 		String url = driver.getCurrentUrl();
 
